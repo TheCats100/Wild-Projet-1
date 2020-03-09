@@ -1,4 +1,5 @@
-## Martin,Lucas,Stephaine
+
+## Martin / Lucas / Stephaine
 
 # Wild-Projet-WCS QUIZZ
 
