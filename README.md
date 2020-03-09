@@ -1,6 +1,8 @@
 # Wild-Projet-WCS QUIZZ
 
-martin / stephaine / lucas
+
+## Martin,Lucas,Stephaine
+
 Compréhension :
 
 -le titre est explicite 
