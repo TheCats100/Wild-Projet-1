@@ -1,4 +1,4 @@
-# Whild-Projet-WCS QUIZZ
+# Wild-Projet-WCS QUIZZ
 
 Compréhension :
 
