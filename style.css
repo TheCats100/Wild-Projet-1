@@ -18,3 +18,39 @@ header {
     font-size: 2rem;
 }
 
+.footer
+{
+ display: flex;
+}
+
+.modal[open] .modal-button::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  
+}
+.modal-button-contact-us {
+  list-style-type: none;
+
+}
+
+.modal[open] .modal-content {
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: grey;
+  border: 3mm ridge rgba(255, 60, 0, 0.89) ;
+  text-align: justify;
+  height: 50vh;
+  width: 50vh;
+  
+}
+
+.text-area-footer {
+  height: 30vh ;
+  width: 50vh;
+}
