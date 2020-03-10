@@ -5,6 +5,7 @@
 
 header {
     
+    font-family: 'Carter One', cursive;
     height: 100vh;
     display: flex;
     justify-content: center;
