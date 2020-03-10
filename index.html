@@ -10,7 +10,6 @@
     <header class="header">
         <h1 class="title">Reims<br/>Wild <br/>Quizz</h1>
     </header>
-
     <section class="question">
     <section>
         <form>
@@ -24,42 +23,45 @@
         </form>
     </section>
     <footer>
-        <section class="section-modal">
-          <details class="modal-model">
-            <summary class="contactus-button">
-                <span class=titre-modal>Modalité :</span>
+        <section class="">
+          <details class="modal">
+            <summary class="modal-button">
+                <span class=modal-title>Modalité :</span>
             </summary>
-                <p>
-                    Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam
-                     Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, 
-                     inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim 
-                      facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter 
-                     addere quaedam male suetos falsa et 
-                    placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.
-                </p>
+            <p class="modal-content-text"> 
+                Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam
+                    Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, 
+                    inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim 
+                    facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter 
+                    addere quaedam male suetos falsa et 
+                placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.
+            </p>
         </section>
-        <section class="contact us">
-            <details class="contactus-model">
-                <summary class="contactus-button">
+        <section class="contact-us">
+            <details class="modal" >
+                <summary class="modal-button-contact-us">
                     <span>
                         contactez-nous : 
                     </span>
                 </summary>
-            <li>
-                <label for="mail">E-mail:</label>
-                <input type="email" placeholder="@">
-            </li>
-            <li>
-                <label for="subject"> objet :</label>
-                <input type="text" placeholder="ecrivez ici">
-            </li>
-            <li>
-                <label for="msg">Message:</label>
-                <textarea placeholder="votre message"></textarea>
-            </li>
-            <li class="button-submit">
-                <input type="submit" value="Envoyer">
-            </li>
+                <form class="modal-content">
+                    <div>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" placeholder="@">
+                    </div>
+                    <div>
+                        <label for="subject"> objet :</label>
+                        <input type="text" placeholder="ecrivez ici">
+                    </div>
+                    <div>
+                        <label class="msg-footer" for="msg">Message:</label>
+                        <textarea class="text-area-footer" placeholder="votre message"></textarea>
+                    </div>
+                    <div class="button-submit">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </details>
         </section>
         <section class="schooladresse">
             <a href="https://www.wildcodeschool.com/fr-FR">
@@ -70,6 +72,4 @@
         </section>
     </footer>
 </body>
-
-
 </html>
