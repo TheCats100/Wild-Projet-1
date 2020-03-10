@@ -9,7 +9,7 @@ header {
     font-family: 'Carter One', cursive;
     display: flex;
     flex-direction: column;
-   
+    
 }
 
 .title {
@@ -22,6 +22,27 @@ header {
 
 
     
+.arrow-container {
+    
+    background-color: black;
+    height: 150px;
+    width: 100vw;
+    color: blue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  
+
+}
+.arrow {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjLC-4_6Io0Bf5NwUfiUpaujfJC150VsOZ6G7kLK5VstDfX8gG);
+    background-size: cover;
+    --size: .3;
+    padding-left: calc(var(--size) * 272px);
+    height: calc(var(--size) * 185px);
+    width: 0;
+    overflow: hidden;
     
 }
 .question{
@@ -50,6 +71,7 @@ header {
     font-size: 0.8rem;
     padding: 1rem;
 }
+
 
 .footer
 {
@@ -86,4 +108,5 @@ header {
 .text-area-footer {
   height: 30vh ;
   width: 50vh;
+
 }
