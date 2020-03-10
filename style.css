@@ -43,3 +43,9 @@ header {
 
 .questionnaire button:active{
     background-color: green;
+}
+
+.imgAlain{
+    height: 100vh;
+    background-color:black ;
+}
