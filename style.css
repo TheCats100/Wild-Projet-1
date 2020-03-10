@@ -19,23 +19,24 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
+    background-color: pink;
+    border: solid;
+    border-color: green;
 }
 
 .question{
     margin-bottom: 30px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.questionnaire .reponse{
+.questionnaire button{
     font-size: 1rem;
     padding: 4%;
     border: solid;
     border-color: black;
     width: 100%;
     text-align: left;
-}
-
-.reponse{
-
+    color: black;
+    background-color: cornflowerblue;
 }
