@@ -40,3 +40,6 @@ header {
     color: black;
     background-color: cornflowerblue;
 }
+
+.questionnaire button:active{
+    background-color: green;
