@@ -4,18 +4,47 @@
 }
 
 header {
+   
     
     font-family: 'Carter One', cursive;
-    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
+    flex-direction: column;
+   
 }
 
+.title {
+    height: 100vh;
+    text-align: center;
+     align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+
+    
+    
+}
 .question{
     height: 100vh;
     font-size: 2rem;
+}
+
+.intro {
+    height: 100vh;
+    ;
+}
+
+.intro-Titre {
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+.intro-Content {
+    font-family: 'Carter One', cursive; 
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 0.8rem;
+    padding: 1rem;
 }
 
