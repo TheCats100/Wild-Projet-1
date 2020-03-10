@@ -3,8 +3,13 @@
     margin: 0;
 }
 
-.title {
-    display: center;
-    width: 20vw;
+header {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 }
 
