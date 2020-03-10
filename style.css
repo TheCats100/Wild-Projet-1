@@ -30,4 +30,10 @@ header {
 .reponse{
     font-size: 1rem;
     padding: 20px;
+    border: solid;
+    border-color: black;
+}
+
+.reponse label{
+    padding: ;
 }
