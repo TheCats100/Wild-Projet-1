@@ -98,15 +98,26 @@ h1 {
 
 input {
     display: none;
-  }
-  input:checked + label {
+}
+
+input:checked + label {
     background-color: green;
-  }
-  .alain-chabat {
-    position: fixed;
-    bottom: 0;
+}
+
+.alain-chabat {
     display: none;
-  }
+}
+
+input:checked + .apresClic .alain-chabat {
+    display: initial;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+}
+
+
 
 /*-------------------Footer--------------------*/
 
