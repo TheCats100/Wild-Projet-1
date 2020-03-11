@@ -96,22 +96,17 @@ h1 {
     padding-bottom: 20px;
 }
 
-.questionnaire button{
-    font-size: 1rem;
-    padding: 4%;
-    border: solid;
-    border-color: black;
-    width: 100%;
-    text-align: left;
-    color: black;
-    background-color: cornflowerblue;
-}
-
-
-.questionnaire button:active{
+input {
+    display: none;
+  }
+  input:checked + label {
     background-color: green;
-}
-
+  }
+  .alain-chabat {
+    position: fixed;
+    bottom: 0;
+    display: none;
+  }
 
 /*-------------------Footer--------------------*/
 
