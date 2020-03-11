@@ -80,7 +80,7 @@ footer
  text-align: center;
 }
 
-.modal[open] .modal-button::before {
+.modal-footer[open] .modal-button::before {
   content: '';
   position: fixed;
   top: 0;
@@ -92,12 +92,9 @@ footer
 .modal-button-contact-us {
   list-style-type: none;
   border:  thick double rgba(255, 60, 0, 0.89);
- 
-
-
 }
 
-.modal[open] .modal-content {
+.modal-footer[open] .modal-content-footer {
   position: fixed;
   top: 50%;
   left:50%;
@@ -107,11 +104,9 @@ footer
   text-align: justify;
   height: 50vh;
   width: 50vh;
-  
 }
 
 .text-area-footer {
   height: 30vh ;
   width: 50vh;
-
 }
