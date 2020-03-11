@@ -84,6 +84,7 @@ footer
 .footer-section1 {
     margin-right: auto;
     text-align: left;
+    
 }
  .footer-section2 {
     margin-left: auto; 
@@ -105,11 +106,12 @@ footer
     margin: auto;
     
 }
-.contact-us-title-footer {
+
     
-}
 .modal-button-contact-us {
   list-style-type: none;
+  max-width: 100%;
+  font-size: small;
   
 }
 
@@ -121,11 +123,33 @@ footer
   background-color: grey;
   border: 3mm ridge rgba(255, 60, 0, 0.89) ;
   text-align: justify;
-  height: 50vh;
+  max-height: 100vh;
   width: 50vh;
 }
 
 .text-area-footer {
   height: 30vh ;
   width: 50vh;
+}
+
+.modal-content-texte {
+    font-size: x-small;
+    text-align: justify;
+}
+
+.wildlogo  {
+    max-width: 100%;
+}
+
+.modal-title-footer{
+    max-height: 100vh;
+  width: 50vh;
+
+}
+
+
+.modal-button-modality {
+    list-style: none;
+    max-width: 100%;
+    font-size: small;
 }
