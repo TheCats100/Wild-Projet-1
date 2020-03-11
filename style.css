@@ -94,6 +94,11 @@ h1 {
     margin-bottom: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 3rem;
+}
+
+.reponse{
+    font-size: 2rem;
 }
 
 input {
@@ -106,11 +111,12 @@ input:checked + label {
 
 .alain-chabat {
     display: none;
+    height: 20vh;
 }
 
 input:checked + .apresClic .alain-chabat {
     display: flex;
-    position: fixed;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -118,6 +124,7 @@ input:checked + .apresClic .alain-chabat {
     padding: 8%;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-between;
     border: solid;
     border-color: yellow;
     border-radius: 12px;
