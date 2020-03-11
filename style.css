@@ -41,13 +41,15 @@ h1 {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   
 
 }
 .arrow {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjLC-4_6Io0Bf5NwUfiUpaujfJC150VsOZ6G7kLK5VstDfX8gG);
     background-size: cover;
+    border-radius: 15px;
     --size: .3;
     padding-left: calc(var(--size) * 272px);
     height: calc(var(--size) * 185px);
@@ -70,8 +72,12 @@ h1 {
     }
     10%
     {
-        transform: translateY(-30px);
+        transform: translateY(-10px);
     } 
+    20%
+    {
+        transform: translateY(10px);
+    }
 }
 
 
