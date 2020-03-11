@@ -76,9 +76,19 @@ header {
 footer
 {
  display: flex;
- flex-direction: column;
- text-align: center;
+ text-align:justify-all ;
+ 
+ 
 }
+
+.footer-section1 {
+    margin-right: auto;
+    text-align: left;
+}
+ .footer-section2 {
+    margin-left: auto; 
+    text-align: right;
+ }
 
 .modal-footer[open] .modal-button::before {
   content: '';
@@ -90,10 +100,17 @@ footer
   
 }
 
-.modal-title-footer
+.modal-title-footer{
+    list-style-type: none;
+    margin: auto;
+    
+}
+.contact-us-title-footer {
+    
+}
 .modal-button-contact-us {
   list-style-type: none;
-  border:  thick double rgba(255, 60, 0, 0.89);
+  
 }
 
 .modal-footer[open] .modal-content-footer {
