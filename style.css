@@ -188,7 +188,7 @@ background-color: rgb(14, 105, 14) ;
 
 /*-------------------Footer--------------------*/
 
-.footer{
+footer{
  display: flex;
  text-align:justify-all ;
  
