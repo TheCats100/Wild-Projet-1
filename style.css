@@ -4,12 +4,45 @@
 }
 
 header {
+   
     
-    height: 100vh;
+    font-family: 'Carter One', cursive;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    
+}
+
+.title {
+    height: 100vh;
     text-align: center;
+     align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+    
+.arrow-container {
+    
+    background-color: black;
+    height: 150px;
+    width: 100vw;
+    color: blue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  
+
+}
+.arrow {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjLC-4_6Io0Bf5NwUfiUpaujfJC150VsOZ6G7kLK5VstDfX8gG);
+    background-size: cover;
+    --size: .3;
+    padding-left: calc(var(--size) * 272px);
+    height: calc(var(--size) * 185px);
+    width: 0;
+    overflow: hidden;
     
 }
 
@@ -41,5 +74,68 @@ header {
     background-color: cornflowerblue;
 }
 
+
 .questionnaire button:active{
     background-color: green;
+
+
+
+
+.intro {
+    height: 100vh;
+    ;
+}
+
+.intro-Titre {
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+.intro-Content {
+    font-family: 'Carter One', cursive; 
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+
+
+.footer
+{
+ display: flex;
+}
+
+.modal[open] .modal-button::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  
+}
+.modal-button-contact-us {
+  list-style-type: none;
+
+}
+
+.modal[open] .modal-content {
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: grey;
+  border: 3mm ridge rgba(255, 60, 0, 0.89) ;
+  text-align: justify;
+  height: 50vh;
+  width: 50vh;
+  
+}
+
+.text-area-footer {
+  height: 30vh ;
+  width: 50vh;
+
+}
+

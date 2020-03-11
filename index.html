@@ -5,42 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">Reims<br/>Wild <br/>Quizz</h1>
+    <header>
+        <section  class="title">
+            <h1>Reims<br/>Wild <br/>Quizz</h1>
+            <div class="arrow-container"><span class="arrow">↓</span></div>
+    </section>
+    <hr/>
+    <section class="intro">
+        <div>        
+            <p  class="intro-Titre">introductoin</p>
+            <p  class="intro-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor magna nulla, id ultrices purus lobortis vitae. Morbi congue vestibulum pharetra. Nullam vestibulum lacinia mi, eget sagittis turpis semper nec. Aenean venenatis ex sit amet quam efficitur, a lacinia ligula rhoncus. Morbi rutrum nibh non convallis interdum. Etiam finibus rhoncus laoreet. Quisque porttitor tortor ut ullamcorper elementum. </p>
+            <p  class="intro-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor magna nulla, id ultrices purus lobortis vitae. Morbi congue vestibulum pharetra. Nullam vestibulum lacinia mi, eget sagittis turpis semper nec. Aenean venenatis ex sit amet quam efficitur, a lacinia ligula rhoncus. Morbi rutrum nibh non convallis interdum. Etiam finibus rhoncus laoreet. Quisque porttitor tortor ut ullamcorper elementum. </p>
+            <p  class="intro-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor magna nulla, id ultrices purus lobortis vitae. Morbi congue vestibulum pharetra. Nullam vestibulum lacinia mi, eget sagittis turpis semper nec. Aenean venenatis ex sit amet quam efficitur, a lacinia ligula rhoncus. Morbi rutrum nibh non convallis interdum. Etiam finibus rhoncus laoreet. Quisque porttitor tortor ut ullamcorper elementum. </p>
+        </div>    
+    </section>
     </header>
-
     <section class="question">
     <section>
         <form class="questionnaire">
-            <fieldset >
                 <p class="question">Parmis ces informations l'une d'elle est fausse, laquelle?</p>
                 <div class="reponse"><input type="radio" name="reponseQ1" value="A1"><label>A -Notre parking comporte un système d'ascenseur</label></div>
                 <div class="reponse"><input type="radio" name="reponseQ1" value="B1"><label>B -Notre promo travaille au milieu d'une dizaine d'entreprises</label></div>
                 <div class="reponse"><input type="radio" name="reponseQ1" value="C1"><label>C -Nous travaillons dans un ancien pôle emploi</label></div>
                 <div class="reponse"><input type="radio" name="reponseQ1" value="D1"><label>D -Nous possèdons un bunker en-dessous et une pépinière au-dessus de notre lieu de travail</label></div>
-            </fieldset>
         </form>
-        <form>
-            <fieldset class="questionnaire">
-                <p class="question">La question 1</p>
-                <div><button type="button">Reponse A</button></div>
-                <div><button type="button">Reponse B</button></div>
-                <div><button type="button">Reponse C</button></div>
-                <div><button type="button">Reponse D</button></div>               
-            </fieldset>
+        <form class="questionnaire">
+                <p class="question">Parmis ces informations l'une d'elle est fausse, laquelle?</p>
+                <div class="reponse"><input type="radio" name="reponseQ1" value="A1"><label>A -Notre parking comporte un système d'ascenseur</label></div>
+                <div class="reponse"><input type="radio" name="reponseQ1" value="B1"><label>B -Notre promo travaille au milieu d'une dizaine d'entreprises</label></div>
+                <div class="reponse"><input type="radio" name="reponseQ1" value="C1"><label>C -Nous travaillons dans un ancien pôle emploi</label></div>
+                <div class="reponse"><input type="radio" name="reponseQ1" value="D1"><label>D -Nous possèdons un bunker en-dessous et une pépinière au-dessus de notre lieu de travail</label></div>
         </form>
     </section>
     <footer>
-        <section>
-            <h2>Modalité :</h2>
-            <p>
-       
+        <section class="">
+          <details class="modal">
+            <summary class="modal-button">
+                <span class=modal-title>Modalité :</span>
+            </summary>
+            <p class="modal-content-text"> 
+                Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam
+                    Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, 
+                    inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim 
+                    facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter 
+                    addere quaedam male suetos falsa et 
+                placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.
             </p>
+        </section>
+        <section class="contact-us">
+            <details class="modal" >
+                <summary class="modal-button-contact-us">
+                    <span>
+                        contactez-nous : 
+                    </span>
+                </summary>
+                <form class="modal-content">
+                    <div>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" placeholder="@">
+                    </div>
+                    <div>
+                        <label for="subject"> objet :</label>
+                        <input type="text" placeholder="ecrivez ici">
+                    </div>
+                    <div>
+                        <label class="msg-footer" for="msg">Message:</label>
+                        <textarea class="text-area-footer" placeholder="votre message"></textarea>
+                    </div>
+                    <div class="button-submit">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </details>
+        </section>
+        <section class="schooladresse">
+            <a href="https://www.wildcodeschool.com/fr-FR">
+            <img class="wildlogo"
+            src="https://avatars2.githubusercontent.com/u/8874047?s=280&v=4"
+            alt="logo de la Wild code School">  
+            </a>
         </section>
     </footer>
 </body>
-
-
 </html>
