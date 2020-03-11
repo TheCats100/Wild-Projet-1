@@ -73,9 +73,10 @@ header {
 }
 
 
-.footer
+footer
 {
  display: flex;
+ flex-direction: column;
 }
 
 .modal[open] .modal-button::before {
