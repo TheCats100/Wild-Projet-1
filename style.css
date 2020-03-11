@@ -142,12 +142,25 @@ h1 {
 
 }
 
-.footer
+footer
 {
  display: flex;
+ text-align:justify-all ;
+ 
+ 
 }
 
-.modal[open] .modal-button::before {
+.footer-section1 {
+    margin-right: auto;
+    text-align: left;
+    
+}
+ .footer-section2 {
+    margin-left: auto; 
+    text-align: right;
+ }
+
+.modal-footer[open] .modal-button::before {
   content: '';
   position: fixed;
   top: 0;
@@ -156,12 +169,22 @@ h1 {
   bottom: 0;
   
 }
-.modal-button-contact-us {
-  list-style-type: none;
 
+.modal-title-footer{
+    list-style-type: none;
+    margin: auto;
+    
 }
 
-.modal[open] .modal-content {
+    
+.modal-button-contact-us {
+  list-style-type: none;
+  max-width: 100%;
+  font-size: small;
+  
+}
+
+.modal-footer[open] .modal-content-footer {
   position: fixed;
   top: 50%;
   left:50%;
@@ -169,13 +192,33 @@ h1 {
   background-color: grey;
   border: 3mm ridge rgba(255, 60, 0, 0.89) ;
   text-align: justify;
-  height: 50vh;
+  max-height: 100vh;
   width: 50vh;
-  
 }
 
 .text-area-footer {
   height: 30vh ;
   width: 50vh;
+}
 
+.modal-content-texte {
+    font-size: x-small;
+    text-align: justify;
+}
+
+.wildlogo  {
+    max-width: 100%;
+}
+
+.modal-title-footer{
+    max-height: 100vh;
+  width: 50vh;
+
+}
+
+
+.modal-button-modality {
+    list-style: none;
+    max-width: 100%;
+    font-size: small;
 }
