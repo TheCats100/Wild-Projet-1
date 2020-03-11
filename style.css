@@ -56,6 +56,26 @@ h1 {
     
 }
 
+.arrow-anim {
+    position: relative;
+    display: inline-block;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    10%
+    {
+        transform: translateY(-30px);
+    } 
+}
+
+
+
 .questionnaire{
     height: 100vh;
     font-size: 2rem;
