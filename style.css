@@ -111,7 +111,10 @@ input:checked + label {
 
 .alain-chabat {
     display: none;
-    height: 20vh;
+}
+
+.textExplicatif{
+    margin-bottom: 2rem;
 }
 
 input:checked + .apresClic .alain-chabat {
