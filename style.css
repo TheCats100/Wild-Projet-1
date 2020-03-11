@@ -117,6 +117,9 @@ input:checked + .apresClic .alain-chabat {
     background-color: white;
 }
 
+.boutonQsuivante{
+    padding: 1em;
+}
 
 
 /*-------------------Footer--------------------*/
