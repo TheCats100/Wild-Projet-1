@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+/*-------------------Intro--------------------*/
+
 header {
    
     
@@ -56,6 +58,27 @@ h1 {
     
 }
 
+.intro {
+    height: 100vh;
+    ;
+}
+
+.intro-Titre {
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+.intro-Content {
+    font-family: 'Carter One', cursive; 
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+
+/*-------------------Questions--------------------*/
+
 .questionnaire{
     height: 100vh;
     font-size: 2rem;
@@ -89,32 +112,8 @@ h1 {
     background-color: green;
 }
 
-.imgAlain{
-    height: 100vh;
-    background-color:black ;
-}
 
-
-
-.intro {
-    height: 100vh;
-    ;
-}
-
-.intro-Titre {
-    font-family: 'Carter One', cursive;
-    text-align: center;
-    padding-top: 3rem;
-    font-size: 2rem;
-}
-.intro-Content {
-    font-family: 'Carter One', cursive; 
-    text-align: center;
-    padding-top: 3rem;
-    font-size: 0.8rem;
-    padding: 1rem;
-}
-
+/*-------------------Footer--------------------*/
 
 .footer
 {
