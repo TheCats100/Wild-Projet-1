@@ -43,13 +43,15 @@ h1 {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    justify-items: ;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   
 
 }
 .arrow {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjLC-4_6Io0Bf5NwUfiUpaujfJC150VsOZ6G7kLK5VstDfX8gG);
     background-size: cover;
+    border-radius: 15px;
     --size: .3;
     padding-left: calc(var(--size) * 272px);
     height: calc(var(--size) * 185px);
@@ -60,23 +62,51 @@ h1 {
 
 .intro {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
 }
 
 .intro-Titre {
     font-family: 'Carter One', cursive;
     text-align: center;
     padding-top: 3rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    
 }
 .intro-Content {
     font-family: 'Carter One', cursive; 
     text-align: center;
-    padding-top: 3rem;
     font-size: 0.8rem;
     padding: 1rem;
+    
+    padding-top: 5rem;
+
+}
+.arrow-anim {
+    position: relative;
+    display: inline-block;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    10%
+    {
+        transform: translateY(-10px);
+    } 
+    20%
+    {
+        transform: translateY(10px);
+    }
 }
 
 /*-------------------Questions--------------------*/
+
 
 .questionnaire{
     height: 100vh;
@@ -125,15 +155,7 @@ input:checked + .apresClic .alain-chabat {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    background-color: rgb(187, 23, 23);
-    padding: 7%;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    border: solid;
-    border-color: yellow;
-    border-radius: 12px;
+    transform: translateX(-50%);
 }
 
 
@@ -152,16 +174,30 @@ input:checked + .apresClic .alain-chabat {
 .boutonQsuivante:hover {
 background-color: rgb(14, 105, 14) ;
 }
+=======
+
 
 
 /*-------------------Footer--------------------*/
 
-.footer
-{
+.footer{
  display: flex;
+ text-align:justify-all ;
+ 
+ 
 }
 
-.modal[open] .modal-button::before {
+.footer-section1 {
+    margin-right: auto;
+    text-align: left;
+    
+}
+ .footer-section2 {
+    margin-left: auto; 
+    text-align: right;
+ }
+
+.modal-footer[open] .modal-button::before {
   content: '';
   position: fixed;
   top: 0;
@@ -170,12 +206,22 @@ background-color: rgb(14, 105, 14) ;
   bottom: 0;
   
 }
-.modal-button-contact-us {
-  list-style-type: none;
 
+.modal-title-footer{
+    list-style-type: none;
+    margin: auto;
+    
 }
 
-.modal[open] .modal-content {
+    
+.modal-button-contact-us {
+  list-style-type: none;
+  max-width: 100%;
+  font-size: small;
+  
+}
+
+.modal-footer[open] .modal-content-footer {
   position: fixed;
   top: 50%;
   left:50%;
@@ -183,13 +229,34 @@ background-color: rgb(14, 105, 14) ;
   background-color: grey;
   border: 3mm ridge rgba(255, 60, 0, 0.89) ;
   text-align: justify;
-  height: 50vh;
+  max-height: 100vh;
   width: 50vh;
-  
 }
 
 .text-area-footer {
   height: 30vh ;
   width: 50vh;
+}
 
+.modal-content-texte {
+    font-size: x-small;
+    text-align: justify;
+}
+
+.wildlogo  {
+    width: 20vw;
+    height: 10vh;
+}
+
+.modal-title-footer{
+    max-height: 100vh;
+  width: 50vh;
+
+}
+
+
+.modal-button-modality {
+    list-style: none;
+    max-width: 100%;
+    font-size: small;
 }

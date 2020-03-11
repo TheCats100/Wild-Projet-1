@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Riems Wild QUIZ</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="https://avatars2.githubusercontent.com/u/8874047?s=280&v=4" type="image/x-icon">
 </head>
 <body>
     <header>
         <section  class="title">
             <h1>Reims<br/>Wild <br/>Quizz</h1>
-            <div class="arrow-container"><span class="arrow">↓</span></div>
+            <div class="arrow-container"><a class="arrow arrow-anim" href="#intro">↓</a></div>
     </section>
     <hr/>
     <section class="intro">
-        <div>        
+        <div id="intro">        
             <p  class="intro-Titre">introductoin</p>
-            <p  class="intro-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor magna nulla, id ultrices purus lobortis vitae. Morbi congue vestibulum pharetra. Nullam vestibulum lacinia mi, eget sagittis turpis semper nec. Aenean venenatis ex sit amet quam efficitur, a lacinia ligula rhoncus. Morbi rutrum nibh non convallis interdum. Etiam finibus rhoncus laoreet. Quisque porttitor tortor ut ullamcorper elementum. </p>
             <p  class="intro-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor magna nulla, id ultrices purus lobortis vitae. Morbi congue vestibulum pharetra. Nullam vestibulum lacinia mi, eget sagittis turpis semper nec. Aenean venenatis ex sit amet quam efficitur, a lacinia ligula rhoncus. Morbi rutrum nibh non convallis interdum. Etiam finibus rhoncus laoreet. Quisque porttitor tortor ut ullamcorper elementum. </p>
             <p  class="intro-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor magna nulla, id ultrices purus lobortis vitae. Morbi congue vestibulum pharetra. Nullam vestibulum lacinia mi, eget sagittis turpis semper nec. Aenean venenatis ex sit amet quam efficitur, a lacinia ligula rhoncus. Morbi rutrum nibh non convallis interdum. Etiam finibus rhoncus laoreet. Quisque porttitor tortor ut ullamcorper elementum. </p>
         </div>    
@@ -51,12 +51,12 @@
         </form>
     </section>
     <footer>
-        <section class="">
-          <details class="modal">
-            <summary class="modal-button">
-                <span class=modal-title>Modalité :</span>
+        <section class="footer-section1">
+          <details class="modal-footer">
+            <summary class="modal-button-modality">
+                <span class=modal-title-footer>Modalité </span>
             </summary>
-            <p class="modal-content-text"> 
+            <p class="modal-content-footer modal-content-texte"> 
                 Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam
                     Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, 
                     inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim 
@@ -65,14 +65,22 @@
                 placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.
             </p>
         </section>
-        <section class="contact-us">
-            <details class="modal" >
+        <section class="schooladresse">
+            <a href="https://www.wildcodeschool.com/fr-FR">
+            
+                <img class="wildlogo"
+            src="https://avatars2.githubusercontent.com/u/8874047?s=280&v=4"
+            alt="logo de la Wild code School">  
+            </a>
+        </section>
+        <section class="footer-section2">
+            <details class="modal-footer" >
                 <summary class="modal-button-contact-us">
-                    <span>
-                        contactez-nous : 
+                    <span class="contact-us-title-footer">
+                        contactez-nous 
                     </span>
                 </summary>
-                <form class="modal-content">
+                <form class="modal-content-footer">
                     <div>
                         <label for="mail">E-mail:</label>
                         <input type="email" placeholder="@">
@@ -85,18 +93,11 @@
                         <label class="msg-footer" for="msg">Message:</label>
                         <textarea class="text-area-footer" placeholder="votre message"></textarea>
                     </div>
-                    <div class="button-submit">
+                    <div class="button-submit-footer">
                         <input type="submit" value="Envoyer">
                     </div>
                 </form>
             </details>
-        </section>
-        <section class="schooladresse">
-            <a href="https://www.wildcodeschool.com/fr-FR">
-            <img class="wildlogo"
-            src="https://avatars2.githubusercontent.com/u/8874047?s=280&v=4"
-            alt="logo de la Wild code School">  
-            </a>
         </section>
     </footer>
 </body>
