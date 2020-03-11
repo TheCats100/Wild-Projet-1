@@ -213,7 +213,8 @@ footer
 }
 
 .wildlogo  {
-    max-width: 100%;
+    width: 20vw;
+    height: 10vh;
 }
 
 .modal-title-footer{
