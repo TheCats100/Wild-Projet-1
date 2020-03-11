@@ -14,24 +14,34 @@ header {
 
 .title {
     height: 100vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+
+
+}
+
+h1 {
+    padding-top: 20vh;
     text-align: center;
-     align-items: center;
+    align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-
 }
     
 .arrow-container {
     
     background-color: black;
-    height: 150px;
+    height: 20vh;
     width: 100vw;
-    color: blue;
+    color: red;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    justify-items: ;
   
 
 }
