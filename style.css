@@ -41,7 +41,7 @@ h1 {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    justify-items: ;
+    
   
 
 }
@@ -65,23 +65,29 @@ h1 {
 
 .intro {
     height: 100vh;
-    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    
 }
 
 .intro-Titre {
     font-family: 'Carter One', cursive;
     text-align: center;
     padding-top: 3rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    
 }
 .intro-Content {
     font-family: 'Carter One', cursive; 
     text-align: center;
-    padding-top: 3rem;
     font-size: 0.8rem;
     padding: 1rem;
-}
+    
+    padding-top: 5rem;
 
+}
 
 .footer
 {
