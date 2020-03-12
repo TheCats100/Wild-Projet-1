@@ -198,8 +198,30 @@ input:checked + .apresClic .alain-chabat {
 background-color: rgb(14, 105, 14) ;
 }
 
+/*-------------------Résultat--------------------*/
 
+.resultat{
+    height:80vh;
+    display: flex;
+    background-image: url(https://cdn-media.rtl.fr/cache/4obaDFEABATtoHaGSVZrIQ/880v587-0/online/image/2018/1107/7795472709_pour-la-3eme-saison-alain-chabat-sera-remplace-par-plusieurs-grands-noms-du-cinema-et-de-la-tele.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
 
+.AlainResultat{
+    background-image: url(https://cdn-media.rtl.fr/cache/4obaDFEABATtoHaGSVZrIQ/880v587-0/online/image/2018/1107/7795472709_pour-la-3eme-saison-alain-chabat-sera-remplace-par-plusieurs-grands-noms-du-cinema-et-de-la-tele.jpg);
+    height: 40%;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.bulleResultat{
+    height: 40%;
+    width: 40%;
+    background-image:url(https://raw.githubusercontent.com/TheCats100/imageWild/master/pngguru.com.png);
+    background-repeat: no-repeat;
+}
 
 /*-------------------Footer--------------------*/
 
