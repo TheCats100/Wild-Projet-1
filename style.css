@@ -116,13 +116,14 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: pink;
+    background-color:#F99797;
     border: solid;
-    border-color: green;
+    border-color: black;
     border-top-width: 20px;
     border-right-width: 20px;
     border-bottom-width: 20px;
     border-left-width: 20px;
+    border-radius: 20px;
 }
 
 .question{
@@ -130,10 +131,12 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 .reponse{
     font-size: 2rem;
+    color:black;
 }
 
 input {
@@ -141,7 +144,7 @@ input {
 }
 
 input:checked + label {
-    background-color: red;
+    background-color: rgb(216, 18, 18);
 }
 
 input:checked + .bonneReponse{
@@ -168,7 +171,7 @@ input:checked + .apresClic .alain-chabat {
     align-items: flex-end;
     justify-content: space-between;
     border: solid;
-    border-color: yellow;
+    border-color: #FFD64F;
     border-radius: 12px;
 }
 
