@@ -10,18 +10,20 @@
 </head>
 <body>
     <header>
-        <section  class="title">
-            <h1>Reims<br/>Wild <br/>Quizz</h1>
-            <div class="arrow-container"><a class="arrow arrow-anim" href="#intro">↓</a></div>
-    </section>
-    <hr/>
-    <section class="intro">
-        <div id="intro">        
-            <p  class="intro-Titre">introductoin</p>
+        <section  class="section-title">
+            <h1 class="ReimsWildQuiz">Reims<br/>Wild<br/>Quiz</h1>
+            <div class="arrow-container">
+                <a class="arrow arrow-anim" href="#intro">↓</a>
+            </div>
+        </section>
+    
+
+        <section class="intro" id="intro">
+            <h1 class="intro-Titre">introduction</h1>
+            <p  class="intro-Content">Bonjour et bienvenue au Reims Wild Quiz. Ce jeu vous est présenté par la wild code school (promition mars 2020). </p>
             <p  class="intro-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor magna nulla, id ultrices purus lobortis vitae. Morbi congue vestibulum pharetra. Nullam vestibulum lacinia mi, eget sagittis turpis semper nec. Aenean venenatis ex sit amet quam efficitur, a lacinia ligula rhoncus. Morbi rutrum nibh non convallis interdum. Etiam finibus rhoncus laoreet. Quisque porttitor tortor ut ullamcorper elementum. </p>
-            <p  class="intro-Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor magna nulla, id ultrices purus lobortis vitae. Morbi congue vestibulum pharetra. Nullam vestibulum lacinia mi, eget sagittis turpis semper nec. Aenean venenatis ex sit amet quam efficitur, a lacinia ligula rhoncus. Morbi rutrum nibh non convallis interdum. Etiam finibus rhoncus laoreet. Quisque porttitor tortor ut ullamcorper elementum. </p>
-        </div>    
-    </section>
+            <a href="#questionNumero1" class="GoQ1">Vers la suite</a> 
+        </section>
     </header>
     <section>
         <form class="questionnaire" id="questionNumero1">
@@ -142,8 +144,8 @@
                 </summary>
                 <form class="modal-content-footer">
                     <div>
-                        <label for="mail">E-mail:</label>
-                        <input type="email" placeholder="@">
+                        <label for="email">Enter your email:</label>
+                        <input type="email" id="email" name="email">
                     </div>
                     <div>
                         <label for="subject"> objet :</label>
