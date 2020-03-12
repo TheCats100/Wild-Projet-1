@@ -173,6 +173,8 @@ input:checked + .bonneReponse{
 
 .textExplicatif{
     margin-bottom: 2rem;
+    color: white;
+    font-weight: bold;
 }
 
 input:checked + .apresClic .alain-chabat {
@@ -405,4 +407,20 @@ footer {
         font-size: 2rem;
          
       }
+}
+
+@media screen and (max-width : 361px){
+    .textResultat{
+        text-align: center;
+        height: 40vh;
+        font-size: 2rem;
+    }
+
+    .alain-chabat{
+        font-size: 1rem;
+    }
+    .intro-Content{
+        font-size: 1rem;
+    }
+
 }
