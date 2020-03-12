@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+:root {
+    scroll-behavior: smooth;
+}
+
+/*-------------------Intro--------------------*/
+
 header {
    
     
@@ -12,48 +18,82 @@ header {
     
 }
 
-.title {
+.section-title {
     height: 100vh;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
     font-size: xx-large;
-
-
+    background-color: #f76c6c;
+    color: white;
 }
 
 h1 {
-    padding-top: 20vh;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
 }
-    
+
+.ReimsWildQuiz {
+    padding-top: 20vh;
+}
+
+.with-background-color {
+    background-color: #f99797;
+}
+
 .arrow-container {
-    
-    background-color: black;
     height: 20vh;
     width: 100vw;
-    color: red;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    
-  
-
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #3b424e;
+    box-shadow: 0px -5px 1px rgb(41, 41, 41);
 }
 .arrow {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjLC-4_6Io0Bf5NwUfiUpaujfJC150VsOZ6G7kLK5VstDfX8gG);
     background-size: cover;
+    border-radius: 15px;
     --size: .3;
     padding-left: calc(var(--size) * 272px);
     height: calc(var(--size) * 185px);
     width: 0;
     overflow: hidden;
+    box-shadow: 0px -5px 1px rgb(41, 41, 41);
+}
+
+.intro 
+    {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #3b424e;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    --main-font: 'Carter One', cursive;
+}
+
+.intro-Titre {
+    font-family: var(--main-font);
+    font-size: 2.5rem;
+    align-items: center;
     
+}
+.intro-Content {
+    font-family: var(--main-font);
+    font-size: 0.8rem;
+}
+
+.GoQ1 {
+    padding-bottom: 5vh;
+    font-size: 2rem;
+    color: white;
 }
 
 .arrow-anim {
@@ -61,6 +101,8 @@ h1 {
     display: inline-block;
     animation: animate 1.5s linear infinite;
 }
+
+
 
 @keyframes animate 
 {
@@ -70,10 +112,15 @@ h1 {
     }
     10%
     {
-        transform: translateY(-30px);
+        transform: translateY(-10px);
     } 
+    20%
+    {
+        transform: translateY(10px);
+    }
 }
 
+/*-------------------Questions--------------------*/
 
 
 .questionnaire{
@@ -88,62 +135,97 @@ h1 {
 }
 
 .question{
-    margin-bottom: 30px;
+    
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 3rem;
 }
 
-.questionnaire button{
-    font-size: 1rem;
-    padding: 4%;
-    border: solid;
-    border-color: black;
-    width: 100%;
-    text-align: left;
-    color: black;
-    background-color: cornflowerblue;
+.reponse{
+    font-size: 2rem;
 }
 
+input {
+    display: none;
+}
 
-.questionnaire button:active{
+input:checked + label {
+    background-color: red;
+}
+
+input:checked + .bonneReponse{
     background-color: green;
 }
 
-.imgAlain{
-    height: 100vh;
-    background-color:black ;
+.alain-chabat {
+    display: none;
 }
 
+.textExplicatif{
+    margin-bottom: 2rem;
+}
 
-
-.intro {
-    height: 100vh;
+input:checked + .apresClic .alain-chabat {
     display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(187, 23, 23);
+    padding: 7%;
     flex-direction: column;
+    align-items: flex-end;
     justify-content: space-between;
-   
-    
+    border: solid;
+    border-color: yellow;
+    border-radius: 12px;
 }
 
-.intro-Titre {
-    font-family: 'Carter One', cursive;
-    text-align: center;
-    padding-top: 3rem;
-    font-size: 2.5rem;
-    
-}
-.intro-Content {
-    font-family: 'Carter One', cursive; 
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 1rem;
-    
-    padding-top: 5rem;
 
+.boutonQsuivante{
+    padding: 1em;
+    display: flex;
+    text-decoration: none;
+    background-color: rgb(9, 73, 9);
+    color: white;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    font-size :1rem;
 }
 
-footer
-{
+.boutonQsuivante:hover {
+background-color: rgb(14, 105, 14) ;
+}
+
+/*-------------------Résultat--------------------*/
+
+.resultat{
+    height:80vh;
+    display: flex;
+    background-image: url(https://cdn-media.rtl.fr/cache/4obaDFEABATtoHaGSVZrIQ/880v587-0/online/image/2018/1107/7795472709_pour-la-3eme-saison-alain-chabat-sera-remplace-par-plusieurs-grands-noms-du-cinema-et-de-la-tele.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.AlainResultat{
+    background-image: url(https://cdn-media.rtl.fr/cache/4obaDFEABATtoHaGSVZrIQ/880v587-0/online/image/2018/1107/7795472709_pour-la-3eme-saison-alain-chabat-sera-remplace-par-plusieurs-grands-noms-du-cinema-et-de-la-tele.jpg);
+    height: 40%;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.bulleResultat{
+    height: 40%;
+    width: 40%;
+    background-image:url(https://raw.githubusercontent.com/TheCats100/imageWild/master/pngguru.com.png);
+    background-repeat: no-repeat;
+}
+
+/*-------------------Footer--------------------*/
+
+footer{
  display: flex;
  text-align:justify-all ;
  background-color: #c8c8c8;
@@ -152,13 +234,14 @@ footer
 }
 
 .footer-section1 {
-    margin-right: auto;
-    text-align: left;
+   
+    text-align: center;
     
 }
  .footer-section2 {
-    margin-left: auto; 
-    text-align: right;
+
+    text-align: center;
+    
  }
 
 .modal-footer[open] .modal-button::before {
@@ -181,10 +264,12 @@ footer
 .modal-button-contact-us {
   list-style-type: none;
   max-width: 100%;
-  font-size: 1.2rem;
-  color: white;
+  font-size: 1,2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;  
   text-shadow: 1px 1px 2px black;
-  
+
 }
 
 .modal-footer[open] .modal-content-footer {
@@ -195,13 +280,16 @@ footer
   background-color: grey;
   border: 3mm ridge rgba(255, 60, 0, 0.89) ;
   text-align: justify;
-  max-height: 100vh;
-  width: 50vh;
+  height: 80vh;
+  width: 70vw;
+  
+   
 }
 
 .text-area-footer {
-  height: 30vh ;
-  width: 50vh;
+    
+    height: 60vh ;
+    width: 70vw;
 }
 
 .modal-content-texte {
@@ -211,12 +299,20 @@ footer
 }
 
 .wildlogo  {
-    max-width: 100%;
+    width: 10vw;
+    height: 10vh;
+    
+
 }
 
 .modal-title-footer{
     max-height: 100vh;
     width: 50vh;
+<<<<<<< HEAD
+=======
+    font-size: 30px;
+   
+>>>>>>> dev
 
 }
 
@@ -225,6 +321,25 @@ footer
     list-style: none;
     max-width: 100%;
     font-size: 1.2rem;
+<<<<<<< HEAD
     color: white;
     text-shadow: 1px 1px 2px black;
+=======
+    color: white;  
+    text-shadow: 1px 1px 2px black;
+}
+
+
+footer {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+
+    
+>>>>>>> dev
+}
+.contact-us-title-footer {
+    font-size: 30px;
 }
