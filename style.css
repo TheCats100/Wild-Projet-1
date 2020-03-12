@@ -227,7 +227,7 @@ background-color: rgb(14, 105, 14) ;
     border: solid;
     border-radius: 1rem;
     border-color: black;
-    font-size: 3rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -239,7 +239,7 @@ footer{
  display: flex;
  text-align:justify-all ;
  background-color: #c8c8c8;
- 
+ height : 20vh;
  
 }
 
@@ -303,14 +303,14 @@ footer{
 }
 
 .modal-content-texte {
-    font-size: x-small;
+    font-size: small;
     text-align: justify;
     
 }
 
 .wildlogo  {
-    width: 10vw;
-    height: 10vh;
+    width: 30vw;
+    height: 15vh;
     
 
 }
@@ -344,4 +344,65 @@ footer {
 }
 .contact-us-title-footer {
     font-size: 30px;
+}
+
+@media screen and (min-width : 361px ) {
+   
+    
+    .intro {
+        padding: 0rem;
+        --main-font: 'Carter One', cursive;
+    }
+    
+    
+    .intro-Content {
+        font-family: var(--main-font);
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .textResultat{
+        background-color: #FFD64F;;
+        border: solid;
+        border-radius: 1rem;
+        border-color: black;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+ 
+    footer {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 20vh;
+    
+        
+    }
+    .wildlogo  {
+        width: 10vw;
+        height: 20vh;
+    }
+
+    .modal-content-texte {
+        font-size: xx-large;
+        text-align: justify;
+        
+    }
+    
+    .modal-footer[open] .modal-content-footer {
+        position: fixed;
+        top: 50%;
+        left:50%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: grey;
+        border: 3mm ridge rgba(255, 60, 0, 0.89) ;
+        text-align: justify;
+        height: 80vh;
+        width: 70vw;
+        font-size: 2rem;
+         
+      }
 }
