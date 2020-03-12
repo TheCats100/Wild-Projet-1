@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 /*-------------------Intro--------------------*/
 
 header {
@@ -110,6 +111,7 @@ h1 {
 
 .questionnaire{
     height: 100vh;
+    box-sizing: border-box;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -117,6 +119,10 @@ h1 {
     background-color: pink;
     border: solid;
     border-color: green;
+    border-top-width: 20px;
+    border-right-width: 20px;
+    border-bottom-width: 20px;
+    border-left-width: 20px;
 }
 
 .question{
@@ -196,7 +202,7 @@ background-color: rgb(14, 105, 14) ;
 }
 
 .textResultat{
-    background-color: white;
+    background-color: #FFD64F;;
     border: solid;
     border-radius: 1rem;
     border-color: black;
