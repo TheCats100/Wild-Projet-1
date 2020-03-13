@@ -410,6 +410,11 @@ footer {
 }
 
 @media screen and (max-width : 361px){
+    
+    .resultat{
+        height: 70vh;
+    }
+
     .textResultat{
         text-align: center;
         height: 40vh;
@@ -420,6 +425,14 @@ footer {
         font-size: 1rem;
     }
     .intro-Content{
+        font-size: 1rem;
+    }
+
+    .question{
+        font-size:2rem;
+    }
+
+    .reponse{
         font-size: 1rem;
     }
 
