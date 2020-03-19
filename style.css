@@ -163,11 +163,12 @@ input {
 }
 
 input:checked + label {
-    background-color: rgb(216, 18, 18);
+    font-weight: bold;
 }
 
 input:checked + .bonneReponse{
-    background-color: green;
+    font-weight: bold;
+;
 }
 
 .alain-chabat {
