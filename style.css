@@ -425,6 +425,11 @@ footer {
         background:url(https://raw.githubusercontent.com/TheCats100/imageWild/master/Alain%20plus%20petit.png);
     }
 
+    .ReimsWildQuiz {
+        padding-top: 25vh;
+    }
+    
+
     .textResultat{
         text-align: center;
         height: 40vh;
