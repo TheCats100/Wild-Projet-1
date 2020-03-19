@@ -240,9 +240,8 @@ background-color: rgb(14, 105, 14) ;
 footer{
  display: flex;
  text-align:justify-all ;
- background-color: #c8c8c8;
+ background-color: #3b424e;
  height : 20vh;
- width: 20vw
 }
 
 .footer-section1 {
@@ -359,9 +358,9 @@ footer {
     
     .intro-Content {
         font-family: var(--main-font);
-        font-size: 1.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        font-size: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
     .textResultat{
         background-color: #FFD64F;;
