@@ -163,11 +163,11 @@ input {
 }
 
 input:checked + label {
-    background-color: #D4474B;
+    background-color: rgb(216, 18, 18);
 }
 
 input:checked + .bonneReponse{
-    background-color: #4D8C5F;
+    background-color: green;
 }
 
 .alain-chabat {
@@ -177,7 +177,6 @@ input:checked + .bonneReponse{
 .textExplicatif{
     margin-bottom: 2rem;
     color: white;
-   /* font-weight: bold;*/
 }
 
 input:checked + .apresClic .alain-chabat {
@@ -211,7 +210,7 @@ input:checked + .apresClic .alain-chabat {
 }
 
 .boutonQsuivante:hover {
-background-color: rgb(14, 105, 14) ;
+background-color: #f99797 ;
 }
 
 
