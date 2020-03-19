@@ -9,7 +9,8 @@
 }
 
 body{
-    background-color:#f99797;
+    background-color:#f76c6c;
+    overflow-X:hidden;
 }
 
 /*-------------------Intro--------------------*/
@@ -93,7 +94,7 @@ h1 {
 .intro-Content {
     font-family: var(--main-font);
     font-size: 0.8rem;
-}
+}0
 
 .GoQ1 {
     padding-bottom: 5vh;
@@ -142,7 +143,7 @@ h1 {
     border-right-width: 20px;
     border-bottom-width: 20px;
     border-left-width: 20px;
-    border-radius: 20px;
+    border-radius: 8vh;
 }
 
 .question{ 
@@ -156,6 +157,7 @@ h1 {
 .reponse{
     font-size: 2rem;
     color:black;
+    margin-left: 5vh;
 }
 
 input {
