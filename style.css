@@ -35,7 +35,7 @@ h1 {
 }
 
 .ReimsWildQuiz {
-    padding-top: 20vh;
+    padding-top: 10vh;
 }
 
 .with-background-color {
@@ -85,6 +85,7 @@ h1 {
     font-family: var(--main-font);
     font-size: 2.5rem;
     align-items: center;
+    
     
 }
 .intro-Content {
@@ -362,6 +363,15 @@ footer {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+    .ReimsWildQuiz{
+        font-size: 8rem;
+    }
+
+    .intro-Titre{
+        margin-top: 6rem;
+        font-size: 6rem;
+    }
+
     .textResultat{
         background-color: #FFD64F;;
         border: solid;
