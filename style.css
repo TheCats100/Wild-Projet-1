@@ -8,6 +8,9 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-color:#f99797;
+}
 
 /*-------------------Intro--------------------*/
 
@@ -132,9 +135,9 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color:#F99797;
+    background-color:#3b424e;
     border: solid;
-    border-color: black;
+    border-color: #f76c6c;
     border-top-width: 20px;
     border-right-width: 20px;
     border-bottom-width: 20px;
@@ -160,11 +163,11 @@ input {
 }
 
 input:checked + label {
-    background-color: rgb(216, 18, 18);
+    background-color: #D4474B;
 }
 
 input:checked + .bonneReponse{
-    background-color: green;
+    background-color: #4D8C5F;
 }
 
 .alain-chabat {
@@ -174,7 +177,7 @@ input:checked + .bonneReponse{
 .textExplicatif{
     margin-bottom: 2rem;
     color: white;
-    font-weight: bold;
+   /* font-weight: bold;*/
 }
 
 input:checked + .apresClic .alain-chabat {
@@ -183,14 +186,14 @@ input:checked + .apresClic .alain-chabat {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: rgb(187, 23, 23);
+    background-color:#f76c6c;
     padding: 2rem;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    border: solid;
-    border-color: #FFD64F;
-    border-radius: 12px;
+    border-radius: 5vh;
+    margin-left: 2vw;
+    margin-right: 15vw;
 }
 
 
@@ -198,8 +201,9 @@ input:checked + .apresClic .alain-chabat {
     padding: 1em;
     display: flex;
     text-decoration: none;
-    background-color: rgb(9, 73, 9);
-    color: white;
+    background-color:white;
+    color: black;
+    font-weight: bold;
     border: solid;
     border-color: black;
     border-radius: 10px;
@@ -242,6 +246,7 @@ footer{
  text-align:justify-all ;
  background-color: #c8c8c8;
  height : 20vh;
+
 }
 
 .footer-section1 {
