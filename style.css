@@ -289,7 +289,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 30vh;   
+    height: 30vh;
+    font-weight: bold;   
 }
 
 .modal-title-footer {
