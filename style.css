@@ -8,9 +8,8 @@
     scroll-behavior: smooth;
 }
 
-body{
 
-
+body {
     background-color:#f76c6c;
     overflow-X:hidden;
 }
@@ -40,7 +39,7 @@ h1 {
 }
 
 .ReimsWildQuiz {
-    padding-top: 20vh;
+    justify-content: center;
 }
 
 .with-background-color {
@@ -49,7 +48,6 @@ h1 {
 
 .arrow-container {
     height: 20vh;
-    width: 100vw;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -80,27 +78,32 @@ h1 {
     justify-content: space-between;
     background-color: #3b424e;
     color: white;
-    align-items: center;
     text-align: center;
     padding: 1rem;
     --main-font: 'Carter One', cursive;
+    font-size: 1.5rem;
 }
 
 .intro-Titre {
     font-family: var(--main-font);
-    font-size: 2.5rem;
+    font-size: 2rem;
     align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
     
 }
 .intro-Content {
     font-family: var(--main-font);
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .GoQ1 {
-    padding-bottom: 5vh;
+    padding-right: 5vw;
+    padding-bottom: 5vw;
     font-size: 2rem;
     color: white;
+
 }
 
 .arrow-anim {
@@ -293,8 +296,10 @@ footer {
     color: #d1d5da;
 }
 .contact-us-title-footer {
+
     font-size: 2rem;
     color: #d1d5da;
+
 }
 
 .modal-button {
@@ -334,7 +339,25 @@ footer {
 
 @media screen and (min-width : 361px ) {
    
+    .headerImageAllain {
+    background-image: url(https://raw.githubusercontent.com/lulup52/RepoImage/master/alain%20chabat.png);
+    background-size: cover;
+    border-radius: 15px;
+    --size: 0.8;
+    padding-left: calc(var(--size) * 272px);
+    height: calc(var(--size) * 250px);
     
+    }
+
+    .allainAndGoQ1 {
+        flex-direction: row-reverse;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        
+        
+    }
+
     .intro {
         padding: 0rem;
         --main-font: 'Carter One', cursive;
@@ -343,10 +366,27 @@ footer {
     
     .intro-Content {
         font-family: var(--main-font);
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding-left: 4rem;
         padding-right: 4rem;
+        display: flex;
+        flex-direction: column;
+        
     }
+
+    .introContentPara {
+        margin-bottom: 2.5rem;
+    }
+
+    .ReimsWildQuiz{
+        font-size: 8rem;
+    }
+
+    .intro-Titre{
+        justify-content: center;
+        font-size: 4.5rem;
+    }
+
 
     .questionnaire{
         border-radius: 8vh;
@@ -404,6 +444,12 @@ footer {
         background:url(https://raw.githubusercontent.com/TheCats100/imageWild/master/Alain%20plus%20petit.png);
     }
 
+    .ReimsWildQuiz {
+        padding-top: 20vh;
+        font-size: 4rem;
+    }
+    
+
     .textResultat{
         text-align: center;
         height: 40vh;
@@ -416,6 +462,9 @@ footer {
     .intro-Content{
         font-size: 1rem;
     }
+    .introContentPara {
+        margin-bottom: 2rem;
+    }
 
     .question{
         font-size:2rem;
@@ -424,6 +473,7 @@ footer {
     .reponse{
         font-size: 1rem;
     }
+
 
     .modal-footer[open] .modal-content-footer {
         position: fixed;
@@ -438,3 +488,10 @@ footer {
         font-size: 2rem;
       }
     }
+
+    .headerImageAllain {
+        display: none;
+    }
+
+}
+
