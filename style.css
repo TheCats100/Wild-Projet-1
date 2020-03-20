@@ -143,7 +143,7 @@ h1 {
     border-right-width: 20px;
     border-bottom-width: 20px;
     border-left-width: 20px;
-    border-radius: 8vh;
+
 }
 
 .question{ 
@@ -369,6 +369,11 @@ footer {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+    .questionnaire{
+        border-radius: 8vh;
+    }
+    
     .textResultat{
         background-color: #FFD64F;;
         border: solid;
