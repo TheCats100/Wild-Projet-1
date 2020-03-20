@@ -346,16 +346,13 @@ footer {
     --size: .8;
     padding-left: calc(var(--size) * 272px);
     height: calc(var(--size) * 250px);
-    
     }
 
     .allainAndGoQ1 {
         flex-direction: row-reverse;
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
-        
-        
+        justify-content: space-between; 
     }
 
     .intro {
@@ -485,8 +482,7 @@ footer {
         height: 80vh;
         width: 70vw;
         font-size: 2rem;
-      }
-    }
+    }   
 
     .headerImageAllain {
         display: none;
