@@ -63,7 +63,7 @@ h1 {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjLC-4_6Io0Bf5NwUfiUpaujfJC150VsOZ6G7kLK5VstDfX8gG);
     background-size: cover;
     border-radius: 15px;
-    --size: .3;
+    --size: 0.3;
     padding-left: calc(var(--size) * 272px);
     height: calc(var(--size) * 185px);
     width: 0;
@@ -95,7 +95,7 @@ h1 {
 .intro-Content {
     font-family: var(--main-font);
     font-size: 0.8rem;
-}0
+}
 
 .GoQ1 {
     padding-bottom: 5vh;
@@ -144,7 +144,6 @@ h1 {
     border-right-width: 20px;
     border-bottom-width: 20px;
     border-left-width: 20px;
-
 }
 
 .question{ 
@@ -381,7 +380,6 @@ footer {
     .modal-content-texte {
         font-size: xx-large;
         text-align: justify;
-        
     }
     
     .modal-footer[open] .modal-content-footer {
@@ -394,8 +392,7 @@ footer {
         text-align: justify;
         height: 80vh;
         width: 70vw;
-        font-size: 2rem;
-         
+        font-size: 2rem;  
       }
 }
 
@@ -438,6 +435,5 @@ footer {
         height: 80vh;
         width: 70vw;
         font-size: 2rem;
-         
       }
     }
