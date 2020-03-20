@@ -369,6 +369,7 @@ footer {
         flex-direction: row;
         align-items: center;
         height: 20vh;
+        font-size: 1.5rem;
     
         
     }
