@@ -343,7 +343,7 @@ footer {
     background-image: url(https://raw.githubusercontent.com/lulup52/RepoImage/master/alain%20chabat.png);
     background-size: cover;
     border-radius: 15px;
-    --size: 0.8;
+    --size: .8;
     padding-left: calc(var(--size) * 272px);
     height: calc(var(--size) * 250px);
     
