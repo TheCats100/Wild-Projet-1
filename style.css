@@ -231,7 +231,7 @@ background-color: #f99797 ;
 }
 
 .textResultat{
-    background-color: #FFD64F;;
+    background-color: #f76c6c;
     border: solid;
     border-radius: 1rem;
     border-color: black;
@@ -353,7 +353,6 @@ footer {
     }
     
     .textResultat{
-        background-color: #FFD64F;;
         border: solid;
         border-radius: 1rem;
         border-color: black;
