@@ -8,7 +8,12 @@
     scroll-behavior: smooth;
 }
 
+body{
 
+
+    background-color:#f76c6c;
+    overflow-X:hidden;
+}
 /*-------------------Intro--------------------*/
 
 header {
@@ -58,7 +63,7 @@ h1 {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjLC-4_6Io0Bf5NwUfiUpaujfJC150VsOZ6G7kLK5VstDfX8gG);
     background-size: cover;
     border-radius: 15px;
-    --size: .3;
+    --size: 0.3;
     padding-left: calc(var(--size) * 272px);
     height: calc(var(--size) * 185px);
     width: 0;
@@ -132,14 +137,13 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color:#F99797;
+    background-color:#3b424e;
     border: solid;
-    border-color: black;
+    border-color: #f76c6c;
     border-top-width: 20px;
     border-right-width: 20px;
     border-bottom-width: 20px;
     border-left-width: 20px;
-    border-radius: 20px;
 }
 
 .question{ 
@@ -153,6 +157,7 @@ h1 {
 .reponse{
     font-size: 2rem;
     color:black;
+    margin-left: 5vh;
 }
 
 input {
@@ -160,11 +165,12 @@ input {
 }
 
 input:checked + label {
-    background-color: rgb(216, 18, 18);
+    font-weight: bold;
 }
 
 input:checked + .bonneReponse{
-    background-color: green;
+    font-weight: bold;
+;
 }
 
 .alain-chabat {
@@ -174,7 +180,6 @@ input:checked + .bonneReponse{
 .textExplicatif{
     margin-bottom: 2rem;
     color: white;
-    font-weight: bold;
 }
 
 input:checked + .apresClic .alain-chabat {
@@ -183,14 +188,14 @@ input:checked + .apresClic .alain-chabat {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: rgb(187, 23, 23);
+    background-color:#f76c6c;
     padding: 2rem;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    border: solid;
-    border-color: #FFD64F;
-    border-radius: 12px;
+    border-radius: 5vh;
+    margin-left: 2vw;
+    margin-right: 15vw;
 }
 
 
@@ -198,8 +203,9 @@ input:checked + .apresClic .alain-chabat {
     padding: 1em;
     display: flex;
     text-decoration: none;
-    background-color: rgb(9, 73, 9);
-    color: white;
+    background-color:white;
+    color: black;
+    font-weight: bold;
     border: solid;
     border-color: black;
     border-radius: 10px;
@@ -207,7 +213,7 @@ input:checked + .apresClic .alain-chabat {
 }
 
 .boutonQsuivante:hover {
-background-color: rgb(14, 105, 14) ;
+background-color: #f99797 ;
 }
 
 
@@ -253,99 +259,78 @@ footer{
 
     text-align: center;
     
- }
-
-.modal-footer[open] .modal-button::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left:0;
-  right: 0;
-  bottom: 0;
-  
 }
 
-.modal-title-footer{
-    list-style-type: none;
-    margin: auto;
-    
+.texte_contactus {
+    padding: 1vh;
 }
 
-    
-.modal-button-contact-us {
-  list-style-type: none;
-  max-width: 100%;
-  font-size: 1,2rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  color: white;  
-  text-shadow: 1px 1px 2px black;
-
+.texte_contactus_inter {
+    margin-bottom: 2vh;
+    color: #d1d5da;
 }
-
-.modal-footer[open] .modal-content-footer {
-  position: fixed;
-  top: 50%;
-  left:50%;
-  transform: translateX(-50%) translateY(-50%);
-  background-color: grey;
-  border: 3mm ridge rgba(255, 60, 0, 0.89) ;
-  text-align: justify;
-  height: 80vh;
-  width: 70vw;
-  
-   
-}
-
 .text-area-footer {
     
     height: 60vh ;
     width: 70vw;
 }
 
-.modal-content-texte {
-    font-size: small;
-    text-align: justify;
-    
-}
-
 .wildlogo  {
     width: 30vw;
     height: 15vh;
     
-
 }
-
-.modal-title-footer{
-    max-height: 100vh;
-    width: 50vh;
-    font-size: 30px;
-   
-
-}
-
-
-.modal-button-modality {
-    list-style: none;
-    max-width: 100%;
-    font-size: 1.2rem;
-    color: white;  
-    text-shadow: 1px 1px 2px black;
-}
-
 
 footer {
     justify-content: space-around;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 30vh;
+    height: 30vh;   
+}
 
-    
+.modal-title-footer {
+    color: #d1d5da;
 }
 .contact-us-title-footer {
-    font-size: 30px;
+    font-size: 2rem;
+    color: #d1d5da;
 }
+
+.modal-button {
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .modal-footer[open] > .modal-button::before {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    cursor: default;
+    content: '';
+    z-index: 99;
+  }
+  
+  .modal-footer .modal-content-footer  {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    font-size: 4em;
+    animation-name: fadein;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+  }
+
+  .modal-button::-webkit-details-marker {
+    display:none;
+  }
 
 @media screen and (min-width : 361px ) {
    
@@ -362,6 +347,11 @@ footer {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+
+    .questionnaire{
+        border-radius: 8vh;
+    }
+    
     .textResultat{
         background-color: #FFD64F;;
         border: solid;
@@ -379,6 +369,7 @@ footer {
         flex-direction: row;
         align-items: center;
         height: 20vh;
+        font-size: 1.5rem;
     
         
     }
@@ -390,7 +381,6 @@ footer {
     .modal-content-texte {
         font-size: xx-large;
         text-align: justify;
-        
     }
     
     .modal-footer[open] .modal-content-footer {
@@ -398,13 +388,12 @@ footer {
         top: 50%;
         left:50%;
         transform: translateX(-50%) translateY(-50%);
-        background-color: grey;
-        border: 3mm ridge rgba(255, 60, 0, 0.89) ;
+        background-color: #3b424e;
+        border: 3mm ridge #d1d5da ;
         text-align: justify;
         height: 80vh;
         width: 70vw;
-        font-size: 2rem;
-         
+        font-size: 2rem;  
       }
 }
 
@@ -436,4 +425,16 @@ footer {
         font-size: 1rem;
     }
 
-}
+    .modal-footer[open] .modal-content-footer {
+        position: fixed;
+        top: 50%;
+        left:50%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: #3b424e;
+        border: 3mm ridge #d1d5da ;
+        text-align: justify;
+        height: 80vh;
+        width: 70vw;
+        font-size: 2rem;
+      }
+    }
