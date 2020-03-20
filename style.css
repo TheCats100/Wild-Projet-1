@@ -131,7 +131,9 @@ h1 {
 }
 
 /*-------------------Questions--------------------*/
-
+.policeCommune{
+    font-family:'Carter One', cursive;
+}
 
 .questionnaire{
     height: 100vh;
