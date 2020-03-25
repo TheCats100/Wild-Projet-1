@@ -247,7 +247,11 @@ background-color: #f99797 ;
 }
 
 .boutonReset{
-    display: inherit
+    display: inherit;
+    color: black;
+    background: transparent none;
+    border: none;
+    text-decoration: none;
 }
 /*-------------------Footer--------------------*/
 
