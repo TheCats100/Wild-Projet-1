@@ -246,6 +246,9 @@ background-color: #f99797 ;
     margin-right: 1rem;
 }
 
+.boutonReset{
+    display: inherit
+}
 /*-------------------Footer--------------------*/
 
 footer{
