@@ -463,6 +463,15 @@ footer {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
+    .blocLongTextExplicatif{
+        margin-top: -1.25rem;
+    }
+
+    .longTextExpl{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
     
     .boutonReset{
         font-size: 1.5rem;
