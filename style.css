@@ -152,8 +152,7 @@ form {
     border-bottom-width: 20px;
     border-left-width: 20px;
     color: white;
-    
-    
+
 }
 
 .question{ 
@@ -536,6 +535,7 @@ footer {
 
     .boutonQsuivante{
         font-size: 0.9rem;
+        padding: 0.5rem;
     }
 
     .intro-Content{
