@@ -16,12 +16,9 @@ body {
 /*-------------------Intro--------------------*/
 
 header {
-   
-    
     font-family: 'Carter One', cursive;
     display: flex;
     flex-direction: column;
-    
 }
 
 .section-title {
@@ -57,6 +54,7 @@ h1 {
     background-color: #3b424e;
     box-shadow: 0px -5px 1px rgb(41, 41, 41);
 }
+
 .arrow {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjLC-4_6Io0Bf5NwUfiUpaujfJC150VsOZ6G7kLK5VstDfX8gG);
     background-size: cover;
@@ -69,8 +67,7 @@ h1 {
     box-shadow: 0px -5px 1px rgb(41, 41, 41);
 }
 
-.intro 
-    {
+.intro{
     height: 100vh;
     box-sizing: border-box;
     display: flex;
@@ -84,15 +81,14 @@ h1 {
     font-size: 1.5rem;
 }
 
-.intro-Titre {
+.intro-Titre{
     font-family: var(--main-font);
     font-size: 2rem;
     align-items: center;
     margin-bottom: 1rem;
-    margin-top: 1rem;
-    
-    
+    margin-top: 1rem;   
 }
+
 .intro-Content {
     font-family: var(--main-font);
     font-size: 1rem;
@@ -152,7 +148,6 @@ form {
     border-bottom-width: 20px;
     border-left-width: 20px;
     color: white;
-
 }
 
 .question{ 
@@ -167,8 +162,6 @@ form {
 .reponse{
     font-size: 2rem;
     margin-left: 5vh;
-    
-
 }
 
 input {
@@ -182,20 +175,16 @@ input:checked + label {
 
 input:checked + .bonneReponse{
     font-weight: bold;
-;
 }
 
 .alain-chabat {
-    display: none;
-    
+    display: none;   
 }
 
 .textExplicatif{
     margin-bottom: 2rem;
     color: #252a31;
-    text-shadow: none;
-
-    
+    text-shadow: none;  
 }
 
 input:checked + .apresClic .alain-chabat {
@@ -258,7 +247,7 @@ background-color: #f99797 ;
     background-size: cover;
     background-position: center;
     filter: grayscale(60%);
-  }
+}
 
 .result-links{
     display: flex;
@@ -309,14 +298,11 @@ footer{
 }
 
 .footer-section1 {
-   
     text-align: center;
-    
 }
- .footer-section2 {
 
+ .footer-section2 {
     text-align: center;
-    
 }
 
 .texte_contactus {
@@ -333,7 +319,6 @@ footer{
     color: white;
 }
 .text-area-footer {
-    
     height: 60vh ;
     width: 70vw;
 }
@@ -341,7 +326,6 @@ footer{
 .wildlogo  {
     width: 30vw;
     height: 15vh;
-    
 }
 
 footer {
@@ -354,23 +338,21 @@ footer {
 }
 
 .contact-us-title-footer {
-
     font-size: 2rem;
-
     color: #d1d5da;
     text-shadow: 1px 3px 2px black;
-
 }
 
 .modal-button {
     cursor: pointer;
     display: inline-block;
   }
-  .Mail{
-      color: lightblue;
-  }
-  
-  .modal-footer[open] > .modal-button::before {
+
+.Mail{
+    color: lightblue;
+}
+
+.modal-footer[open] > .modal-button::before {
     position: fixed;
     top: 0;
     right: 0;
@@ -380,9 +362,9 @@ footer {
     cursor: default;
     content: '';
     z-index: 99;
-  }
-  
-  .modal-footer .modal-content-footer  {
+}
+
+.modal-footer .modal-content-footer  {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -394,11 +376,11 @@ footer {
     border: 1px solid #d1d5da;
     border-radius: 3px;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
-  }
+}
 
-  .modal-button::-webkit-details-marker {
+.modal-button::-webkit-details-marker {
     display:none;
-  }
+}
 
 @media screen and (min-width : 361px ) {
 
@@ -433,7 +415,6 @@ footer {
         padding-right: 4rem;
         display: flex;
         flex-direction: column;
-        
     }
 
     .introContentPara {
@@ -489,10 +470,9 @@ footer {
         flex-direction: row;
         align-items: center;
         height: 20vh;
-        font-size: 1.5rem;
-    
-        
+        font-size: 1.5rem;  
     }
+
     .wildlogo  {
         width: 10vw;
         height: 20vh;
@@ -514,7 +494,7 @@ footer {
         height: 80vh;
         width: 70vw;
         font-size: 2rem;  
-      }
+    }
 }
 
 @media screen and (max-width : 361px){
@@ -529,16 +509,17 @@ footer {
     }
 
     .ReimsWildQuiz {
-            padding-top: 20vh;
-            font-size: 4rem;
-        }
+        padding-top: 20vh;
+        font-size: 4rem;
+    }
 
     .intro-Content{
-            font-size: 1rem;
-        }
-        .introContentPara {
-            margin-bottom: 2rem;
-        }
+        font-size: 1rem;
+    }
+    
+    .introContentPara {
+        margin-bottom: 2rem;
+    }
 
     .resultat{
         height: 70vh;
