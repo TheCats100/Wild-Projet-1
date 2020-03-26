@@ -405,7 +405,9 @@ footer {
   }
 
 @media screen and (min-width : 361px ) {
-   
+
+/*-------------------header--------------------*/    
+
     .headerImageAllain {
     background-image: url(https://raw.githubusercontent.com/lulup52/RepoImage/master/alain%20chabat.png);
     background-size: cover;
@@ -505,20 +507,40 @@ footer {
 }
 
 @media screen and (max-width : 361px){
-    
+   
+/*-------------------header--------------------*/    
     .intro-Titre{
         font-size: 1.5rem;
     }
 
-    .resultat{
-        height: 70vh;
+    .headerImageAllain {
+        display: none;
     }
 
     .ReimsWildQuiz {
-        padding-top: 20vh;
-        font-size: 4rem;
+            padding-top: 20vh;
+            font-size: 4rem;
+        }
+
+    .intro-Content{
+            font-size: 1rem;
+        }
+        .introContentPara {
+            margin-bottom: 2rem;
+        }
+
+    .resultat{
+        height: 70vh;
     }
-    
+/*-------------------questions--------------------*/    
+
+    .question{
+        font-size:2rem;
+    }
+
+    .reponse{
+        font-size: 1rem;
+    }
 
     .textResultat{
         text-align: center;
@@ -537,22 +559,7 @@ footer {
         font-size: 0.9rem;
         padding: 0.5rem;
     }
-
-    .intro-Content{
-        font-size: 1rem;
-    }
-    .introContentPara {
-        margin-bottom: 2rem;
-    }
-
-    .question{
-        font-size:2rem;
-    }
-
-    .reponse{
-        font-size: 1rem;
-    }
-
+/*-------------------footer--------------------*/    
 
     .modal-footer[open] .modal-content-footer {
         position: fixed;
@@ -565,10 +572,6 @@ footer {
         height: 80vh;
         width: 70vw;
         font-size: 0.75rem;
-
-    }
-    .headerImageAllain {
-        display: none;
     }
 
 }
