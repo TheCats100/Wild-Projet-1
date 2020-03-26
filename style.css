@@ -522,13 +522,14 @@ footer {
         font-size: 1rem;
     }
 
+    .blocLongTextExplicatif{
+        margin-top: -1.2rem;
+    }
+
     .longTextExpl{
         font-size: 0.8rem;
     }
 
-    input:checked + .apresClic .alain-chabat{
-        margin-top: -1.2rem;
-    }
 
     .boutonQsuivante{
         font-size: 0.9rem;
