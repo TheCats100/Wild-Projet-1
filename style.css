@@ -211,8 +211,7 @@ input:checked + .apresClic .alain-chabat {
     border-radius: 5vh;
     margin-right: 15vw;
     box-shadow: 1px 2px 3px black;
-    
-    
+    width: 70vw;
 }
 
 
@@ -525,6 +524,10 @@ footer {
 
     .longTextExpl{
         font-size: 0.8rem;
+    }
+
+    input:checked + .apresClic .alain-chabat{
+        margin-top: -1.2rem;
     }
 
     .boutonQsuivante{
