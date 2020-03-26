@@ -281,7 +281,8 @@ background-color: #f99797 ;
     color: black;
     background-color: #f76c6c;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-color: #f57d7d;
+    border-radius: 15px;
 }
 
 
@@ -472,9 +473,13 @@ footer {
         font-size: 1.5rem;
         margin-bottom: 0;
     }
+
+    .boutonReStart{
+        font-size: 2rem;
+    }
     
     .boutonReset{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 /*-------------------footer--------------------*/    
 
