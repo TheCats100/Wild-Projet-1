@@ -131,8 +131,10 @@ h1 {
 }
 
 /*-------------------Questions--------------------*/
-.policeCommune{
+
+form {
     font-family:'Carter One', cursive;
+
 }
 
 .questionnaire{
@@ -149,6 +151,9 @@ h1 {
     border-right-width: 20px;
     border-bottom-width: 20px;
     border-left-width: 20px;
+    color: white;
+    text-shadow: 1px 4px 2px black;
+    
 }
 
 .question{ 
@@ -157,12 +162,14 @@ h1 {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
+    text-shadow: 2px 8px 5px black;
 }
 
 .reponse{
     font-size: 2rem;
-    color:black;
     margin-left: 5vh;
+    
+
 }
 
 input {
@@ -180,11 +187,15 @@ input:checked + .bonneReponse{
 
 .alain-chabat {
     display: none;
+    
 }
 
 .textExplicatif{
     margin-bottom: 2rem;
-    color: white;
+    color: #252a31;
+    text-shadow: none;
+
+    
 }
 
 input:checked + .apresClic .alain-chabat {
@@ -201,6 +212,9 @@ input:checked + .apresClic .alain-chabat {
     border-radius: 5vh;
     margin-left: 2vw;
     margin-right: 15vw;
+    box-shadow: 1px 2px 3px black;
+    
+    
 }
 
 
@@ -209,12 +223,13 @@ input:checked + .apresClic .alain-chabat {
     display: flex;
     text-decoration: none;
     background-color:white;
-    color: black;
+    color: #252a31;
     font-weight: bold;
     border: solid;
-    border-color: black;
+    border-color: #3b424e;
     border-radius: 10px;
     font-size :1rem;
+    text-shadow: none;
 }
 
 .boutonQsuivante:hover {
@@ -244,6 +259,7 @@ background-color: #f99797 ;
     margin-bottom: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
+
 }
 
 .boutonReset{
@@ -304,12 +320,14 @@ footer {
 
 .modal-title-footer {
     color: #d1d5da;
+    text-shadow: 1px 3px 2px black;
+
 }
 .contact-us-title-footer {
 
     font-size: 2rem;
     color: #d1d5da;
-
+    text-shadow: 1px 3px 2px black;
 }
 
 .modal-button {
