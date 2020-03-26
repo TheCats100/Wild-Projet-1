@@ -272,7 +272,7 @@ footer{
 
 .texte_contactus_inter {
     margin-bottom: 2vh;
-    color: #d1d5da;
+    color: black;
 }
 .text-area-footer {
     
@@ -296,12 +296,12 @@ footer {
 }
 
 .modal-title-footer {
-    color: #d1d5da;
+    color: white;
 }
 .contact-us-title-footer {
 
     font-size: 2rem;
-    color: #d1d5da;
+    color: white;
 
 }
 
