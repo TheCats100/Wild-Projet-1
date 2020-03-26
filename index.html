@@ -18,9 +18,9 @@
         </section>
     
 
-        <section class="intro" id="intro">
+        <div class="intro" id="intro">
 
-            <div class="intro-Titre"><h1>Introduction</h1></div>
+            <header class="intro-Titre"><h1>Introduction</h1></header>
             <div class="intro-Content">
                 <p class="introContentPara">Bonjour et bienvenue au Reims Wild Quiz. Ce jeu vous est présenté par la Wild Code School (promotion mars 2020) et s'inspire de l'émission "burger quiz". Le but ici est de découvrir la ville de Reims et le contenu de la formation Wilder. Au fur et à mesure des questions, le présentateur Alain Chabat, que vous connaissez sûrement, interviendra de manière ponctuelle afin de vous fournir des éléments de contexte au sujet des questions posées.</p>
                 <p>Pour jouer, rien de plus simple ! Une question va s'afficher avec 4 propositions de réponses. Il vous suffira d'appuyer sur celle que vous pensez être la bonne. Bonne chance à vous !</p>
@@ -31,11 +31,11 @@
                 <div><img class="headerImageAllain"></div>
             </div>
 
-        </section>
+        </div>
     </header>
     <form oninput="score.value=parseInt(question1.value)+
     parseInt(question2.value)+parseInt(question3.value)+parseInt(question4.value)" class="policeCommune">
-        <section class="questionnaire" id="questionNumero1">
+        <div class="questionnaire" id="questionNumero1">
             <p class="question">Quel est l'autre nom de la ville de Reims ?</p>
                 <div class="reponse">
                     <input type="radio" name="question1" id="Q1R1" value="0">
@@ -50,10 +50,10 @@
                 <input type="radio" name="question1" id="Q1R3" value="0"><label class="apresClic" for="Q1R3">C - La cité des sabres.<span class="alain-chabat"><span class="textExplicatif">Et non... C'était la réponse B.</span><a class="boutonQsuivante" href="#questionNumero2">Question<br> suivante !</a></span></label>
             </div>
                 <div class="reponse">
-                    <input type="radio" name="question1" id="Q1R4" value="0"><label class="apresClic" for="Q1R4">D - La cité des sacs<span class="alain-chabat"><span class="textExplicatif">Comment ça les rémois sont alcooliques ? La bonne réponse était la réponse B</span><a class="boutonQsuivante" href="#questionNumero2">Question<br> suivante !</a></span></label>
+                    <input type="radio" name="question1" id="Q1R4" value="0"><label class="apresClic" for="Q1R4">D - La cité des sacs.<span class="alain-chabat"><span class="textExplicatif">Comment ça les rémois sont alcooliques ? La bonne réponse était la réponse B.</span><a class="boutonQsuivante" href="#questionNumero2">Question<br> suivante !</a></span></label>
                 </div>
-        </section>
-        <section class="questionnaire" id="questionNumero2">
+        </div>
+        <div class="questionnaire" id="questionNumero2">
             <p class="question">Quelle est la spécialité de la région de Reims ?</p>
             <div class="reponse">
                 <input type="radio" name="question2" id="Q2R1" value="1"><label class="apresClic bonneReponse" for="Q2R1">A - Le champagne.<span class="alain-chabat"><span class="textExplicatif">Bonne réponse, c'était évidemment le champagne !</span><a class="boutonQsuivante" href="#questionNumero3">Question<br> suivante !</a></span></label>
@@ -69,26 +69,26 @@
             </div>
 
             <div class="reponse">
-                <input type="radio" name="question2" id="Q2R4" value="0"><label class="apresClic" for="Q2R4">D - Les dialises.<span class="alain-chabat"><span class="textExplicatif">AHahAHah ! Quoi ? Les Reims, les reins, les dialises ? Vous l'avez pas ? Bon, de toutes façon c'était la réponse A qui était attendue</span><a class="boutonQsuivante" href="#questionNumero3">Question<br> suivante !</a></span></label>
+                <input type="radio" name="question2" id="Q2R4" value="0"><label class="apresClic" for="Q2R4">D - Les dialises.<span class="alain-chabat"><span class="textExplicatif">AHahAHah ! Quoi ? Les Reims, les reins, les dialises ? Vous l'avez pas ? Bon, de toutes façon c'était la réponse A qui était attendue.</span><a class="boutonQsuivante" href="#questionNumero3">Question<br> suivante !</a></span></label>
             </div>
-        </section>
-        <section class="questionnaire" id="questionNumero3">
+        </div>
+        <div class="questionnaire" id="questionNumero3">
             <p class="question">Parmi ces informations l'une d'elle est fausse, laquelle ?</p>
                 <div class="reponse">
                     <input type="radio" name="question3" id="Q3R1" value="1"><label class="apresClic bonneReponse" for="Q3R1">A - Notre parking automobile comporte un système d'ascenseur.<span class="alain-chabat"><span class="textExplicatif">Bonne réponse, on aimerait un plus grand parking c'est sur.</span><a class="boutonQsuivante" href="#questionNumero4">Question<br> suivante !</a></span></label>
                 </div>
                 <div class="reponse">
-                    <input type="radio" name="question3" id="Q3R2" value="0"><label class="apresClic" for="Q3R2">B - Notre promo travaille au milieu d'une dizaine<span class="alain-chabat"><span class="textExplicatif">Ce n'est pas la bonne réponse, celle attendu était la A.</span><a class="boutonQsuivante" href="#questionNumero4">Question<br>suivante !</a></span></label>
+                    <input type="radio" name="question3" id="Q3R2" value="0"><label class="apresClic" for="Q3R2">B - Notre promo travaille au milieu d'une dizaine d'entreprises.<span class="alain-chabat"><span class="textExplicatif">Ce n'est pas la bonne réponse, celle attendu était la A.</span><a class="boutonQsuivante" href="#questionNumero4">Question<br>suivante !</a></span></label>
                 </div>
                 <div class="reponse">
-                    <input type="radio" name="question3" id="Q3R3" value="0"><label class="apresClic" for="Q3R3">C - Nous travaillons dans un ancien pôle emploi.<span class="alain-chabat"><span class="textExplicatif">Mauvaise réponse... On a encore parfois des visites qui demandent les ASSEDIC ! Par contre, nous n'avons pas d'ascenseur à notre parking.</span><a class="boutonQsuivante" href="#questionNumero4">Question<br> suivante !</a></span></label>
+                    <input type="radio" name="question3" id="Q3R3" value="0"><label class="apresClic" for="Q3R3">C - Nous travaillons dans un ancien pôle emploi.<span class="alain-chabat"><span class="textExplicatif longTextExpl">Mauvaise réponse... On a encore parfois des visites qui demandent les ASSEDIC ! Par contre, nous n'avons pas d'ascenseur à notre parking.</span><a class="boutonQsuivante" href="#questionNumero4">Question<br> suivante !</a></span></label>
                 </div>
                 <div class="reponse">
-                    <input type="radio" name="question3" id="Q3R4" value="0"><label class="apresClic" for="Q3R4">D - Nous possèdons un bunker en-dessous et une pépinière au-dessus de notre lieu de travail.<span class="alain-chabat"><span class="textExplicatif">Pas de bol, c'était le piège, car notre bâtiment à deux étages portant ces noms. Comment ça c'est de la triche ? Enfin bref la bonne réponse était la A.</span><a class="boutonQsuivante" href="#questionNumero4">Question<br> suivante !</a></span></label>
+                    <input type="radio" name="question3" id="Q3R4" value="0"><label class="apresClic" for="Q3R4">D - Nous possèdons un bunker en-dessous et une pépinière au-dessus de notre lieu de travail.<span class="alain-chabat"><span class="textExplicatif longTextExpl">Pas de bol, c'était le piège, car notre bâtiment a deux étages portant ces noms. Comment ça c'est de la triche ? Enfin bref la bonne réponse était la A.</span><a class="boutonQsuivante" href="#questionNumero4">Question<br> suivante !</a></span></label>
                 </div>
-        </section>
+        </div>
 
-        <section class="questionnaire" id="questionNumero4">
+        <div class="questionnaire" id="questionNumero4">
             <p class="question">Parmi ces propositions, laquelle correspond à un membre de notre promo ?</p>
 
             <div class="reponse">
@@ -105,10 +105,14 @@
             <div class="reponse">
                 <input type="radio" name="question4" id="Q4R4" value="1"><label class="apresClic  bonneReponse" for="Q4R4">D - A, B, C et donc D.<span class="alain-chabat"><span class="textExplicatif">Bonne réponse ! Sacrée équipe n'est-ce pas ?</span><a class="boutonQsuivante" href="#resultats">Allez aux<br>résultats !</a></span></label>
             </div>
-        </section>
-        <section class="resultat" id="resultats">
-            <p class="textResultat">Jolie score de <output name="score"></output> MIAMS !<br>Merci d'avoir participé à ce superbe Quiz, nous espérons vous revoir bientôt ! <input class="boutonReset" type="reset" value="Recommencer le quiz ? Cliquer ici"></p>
-        </section>
+        </div>
+        <div class="resultat" id="resultats">
+            <p class="textResultat">Jolie score de <output name="score"></output> MIAMS !<br>Merci d'avoir participé à ce superbe Quiz, nous espérons vous revoir bientôt !</p>
+            <div class="result-links">
+                <button class="boutonReset" type="reset">Remettre à 0</button>
+                <a href="#intro" class="boutonReStart">Retourner au début</a>
+            </div>
+        </div>
     </form>
     <footer>
         <section class="footer-section1">
