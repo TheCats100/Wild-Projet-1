@@ -270,9 +270,14 @@ footer{
     padding: 1vh;
 }
 
+.modal-content-footer .modal-content-texte{
+    margin-bottom: 2vh;
+    color: white;
+}
+
 .texte_contactus_inter {
     margin-bottom: 2vh;
-    color: black;
+    color: white;
 }
 .text-area-footer {
     
@@ -484,7 +489,7 @@ footer {
         text-align: justify;
         height: 80vh;
         width: 70vw;
-        font-size: 2rem;
+        font-size: 0.75rem;
 
     }
     .headerImageAllain {
