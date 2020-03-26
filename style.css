@@ -293,9 +293,14 @@ footer{
     padding: 1vh;
 }
 
+.modal-content-footer .modal-content-texte{
+    margin-bottom: 2vh;
+    color: white;
+}
+
 .texte_contactus_inter {
     margin-bottom: 2vh;
-    color: #d1d5da;
+    color: white;
 }
 .text-area-footer {
     
@@ -321,18 +326,22 @@ footer {
 .modal-title-footer {
     color: #d1d5da;
     text-shadow: 1px 3px 2px black;
-
 }
 .contact-us-title-footer {
 
     font-size: 2rem;
+
     color: #d1d5da;
     text-shadow: 1px 3px 2px black;
+
 }
 
 .modal-button {
     cursor: pointer;
     display: inline-block;
+  }
+  .Mail{
+      color: lightblue;
   }
   
   .modal-footer[open] > .modal-button::before {
@@ -509,7 +518,7 @@ footer {
         text-align: justify;
         height: 80vh;
         width: 70vw;
-        font-size: 2rem;
+        font-size: 0.75rem;
 
     }
     .headerImageAllain {
