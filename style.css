@@ -453,6 +453,7 @@ footer {
         font-size: 3.5rem;
     }
 
+/*-------------------questions--------------------*/    
 
     .questionnaire{
         border-radius: 8vh;
@@ -471,6 +472,7 @@ footer {
     .boutonReset{
         font-size: 1.5rem;
     }
+/*-------------------footer--------------------*/    
 
     footer {
         justify-content: space-around;
