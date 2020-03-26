@@ -314,6 +314,9 @@ footer {
     cursor: pointer;
     display: inline-block;
   }
+  .Mail{
+      color: lightblue;
+  }
   
   .modal-footer[open] > .modal-button::before {
     position: fixed;
