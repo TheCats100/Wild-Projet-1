@@ -131,9 +131,6 @@ h1 {
 }
 
 /*-------------------Questions--------------------*/
-/*.policeCommune{
-    font-family:'Carter One', cursive;
-}*/
 
 .questionnaire{
     height: 100vh;
@@ -241,15 +238,15 @@ background-color: #f99797 ;
     border-radius: 1rem;
     border-color: black;
     font-size: 1.4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 .boutonReset{
-    display: none;
+    display: inherit;
     color: black;
-    background: transparent none;
+    background-color: #f76c6c;
     border: none;
     font-weight: bold;
     padding: 1vh;
@@ -409,7 +406,11 @@ footer {
         margin-left: 1rem;
         margin-right: 1rem;
     }
- 
+    
+    .boutonReset{
+        font-size: 1.5rem;
+    }
+
     footer {
         justify-content: space-around;
         display: flex;
@@ -459,7 +460,6 @@ footer {
 
     .textResultat{
         text-align: center;
-        height: 20vh;
         font-size: 1.5rem;
     }
 
