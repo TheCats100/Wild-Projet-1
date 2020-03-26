@@ -224,12 +224,31 @@ background-color: #f99797 ;
 
 .resultat{
     height:80vh;
+    position: relative;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.resultat:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0%; right: 0%; z-index: -1;
     background-image: url(https://cdn-media.rtl.fr/cache/4obaDFEABATtoHaGSVZrIQ/880v587-0/online/image/2018/1107/7795472709_pour-la-3eme-saison-alain-chabat-sera-remplace-par-plusieurs-grands-noms-du-cinema-et-de-la-tele.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    flex-direction: column-reverse;
+    background-position: center;
+    filter: grayscale(60%);
+  }
+
+.result-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 .textResultat{
@@ -239,18 +258,30 @@ background-color: #f99797 ;
     border-color: black;
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding: 1rem;
 }
 
 .boutonReset{
-    display: inherit;
     color: black;
     background-color: #f76c6c;
-    border: none;
-    font-weight: bold;
-    padding: 1vh;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
+
+
+.boutonReStart{
+    color: #f76c6c;
+    text-shadow: 0 0 2px black;
+}
+
+.boutonReStart:hover{
+    text-decoration: none;
+}
+
+/*input[type=reset]:focus + .boutonReset .boutonReStart{
+    display: none;
+}*/
+
 /*-------------------Footer--------------------*/
 
 footer{
@@ -449,7 +480,6 @@ footer {
     
     .resultat{
         height: 70vh;
-        background:url(https://raw.githubusercontent.com/TheCats100/imageWild/master/Alain%20plus%20petit.png);
     }
 
     .ReimsWildQuiz {
