@@ -16,12 +16,9 @@ body {
 /*-------------------Intro--------------------*/
 
 header {
-   
-    
     font-family: 'Carter One', cursive;
     display: flex;
     flex-direction: column;
-    
 }
 
 .section-title {
@@ -57,6 +54,7 @@ h1 {
     background-color: #3b424e;
     box-shadow: 0px -5px 1px rgb(41, 41, 41);
 }
+
 .arrow {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjLC-4_6Io0Bf5NwUfiUpaujfJC150VsOZ6G7kLK5VstDfX8gG);
     background-size: cover;
@@ -69,8 +67,7 @@ h1 {
     box-shadow: 0px -5px 1px rgb(41, 41, 41);
 }
 
-.intro 
-    {
+.intro{
     height: 100vh;
     box-sizing: border-box;
     display: flex;
@@ -84,15 +81,14 @@ h1 {
     font-size: 1.5rem;
 }
 
-.intro-Titre {
+.intro-Titre{
     font-family: var(--main-font);
     font-size: 2rem;
     align-items: center;
     margin-bottom: 1rem;
-    margin-top: 1rem;
-    
-    
+    margin-top: 1rem;   
 }
+
 .intro-Content {
     font-family: var(--main-font);
     font-size: 1rem;
@@ -131,8 +127,10 @@ h1 {
 }
 
 /*-------------------Questions--------------------*/
-.policeCommune{
+
+form {
     font-family:'Carter One', cursive;
+
 }
 
 .questionnaire{
@@ -149,6 +147,7 @@ h1 {
     border-right-width: 20px;
     border-bottom-width: 20px;
     border-left-width: 20px;
+    color: white;
 }
 
 .question{ 
@@ -157,11 +156,11 @@ h1 {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
+    text-shadow: 2px 8px 5px black;
 }
 
 .reponse{
     font-size: 2rem;
-    color:black;
     margin-left: 5vh;
 }
 
@@ -171,20 +170,21 @@ input {
 
 input:checked + label {
     font-weight: bold;
+    text-shadow: 1px 4px 2px black;
 }
 
 input:checked + .bonneReponse{
     font-weight: bold;
-;
 }
 
 .alain-chabat {
-    display: none;
+    display: none;   
 }
 
 .textExplicatif{
     margin-bottom: 2rem;
-    color: white;
+    color: #252a31;
+    text-shadow: none;  
 }
 
 input:checked + .apresClic .alain-chabat {
@@ -194,13 +194,14 @@ input:checked + .apresClic .alain-chabat {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     background-color:#f76c6c;
-    padding: 2rem;
+    padding: 1.5rem;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
     border-radius: 5vh;
-    margin-left: 2vw;
     margin-right: 15vw;
+    box-shadow: 1px 2px 3px black;
+    width: 70vw;
 }
 
 
@@ -209,12 +210,13 @@ input:checked + .apresClic .alain-chabat {
     display: flex;
     text-decoration: none;
     background-color:white;
-    color: black;
+    color: #252a31;
     font-weight: bold;
     border: solid;
-    border-color: black;
+    border-color: #3b424e;
     border-radius: 10px;
     font-size :1rem;
+    text-shadow: none;
 }
 
 .boutonQsuivante:hover {
@@ -227,12 +229,31 @@ background-color: #f99797 ;
 
 .resultat{
     height:80vh;
+    position: relative;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.resultat:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0%; right: 0%; z-index: -1;
     background-image: url(https://cdn-media.rtl.fr/cache/4obaDFEABATtoHaGSVZrIQ/880v587-0/online/image/2018/1107/7795472709_pour-la-3eme-saison-alain-chabat-sera-remplace-par-plusieurs-grands-noms-du-cinema-et-de-la-tele.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    flex-direction: column-reverse;
+    background-position: center;
+    filter: grayscale(60%);
+}
+
+.result-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 .textResultat{
@@ -241,10 +262,31 @@ background-color: #f99797 ;
     border-radius: 1rem;
     border-color: black;
     font-size: 1.4rem;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
+
+.boutonReset{
+    color: black;
+    background-color: #f76c6c;
+    padding: 0.5rem 1rem;
+    border-color: #f57d7d;
+    border-radius: 15px;
+}
+
+
+.boutonReStart{
+    color: #f76c6c;
+    text-shadow:1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;;
+}
+
+.boutonReStart:hover{
+    text-decoration: none;
+}
+
+/*input[type=reset]:focus + .boutonReset .boutonReStart{
+    display: none;
+}*/
 
 /*-------------------Footer--------------------*/
 
@@ -256,26 +298,27 @@ footer{
 }
 
 .footer-section1 {
-   
     text-align: center;
-    
 }
- .footer-section2 {
 
+ .footer-section2 {
     text-align: center;
-    
 }
 
 .texte_contactus {
     padding: 1vh;
 }
 
+.modal-content-footer .modal-content-texte{
+    margin-bottom: 2vh;
+    color: white;
+}
+
 .texte_contactus_inter {
     margin-bottom: 2vh;
-    color: #d1d5da;
+    color: white;
 }
 .text-area-footer {
-    
     height: 60vh ;
     width: 70vw;
 }
@@ -283,7 +326,6 @@ footer{
 .wildlogo  {
     width: 30vw;
     height: 15vh;
-    
 }
 
 footer {
@@ -295,22 +337,22 @@ footer {
     font-weight: bold;   
 }
 
-.modal-title-footer {
-    color: #d1d5da;
-}
 .contact-us-title-footer {
-
     font-size: 2rem;
     color: #d1d5da;
-
+    text-shadow: 1px 3px 2px black;
 }
 
 .modal-button {
     cursor: pointer;
     display: inline-block;
   }
-  
-  .modal-footer[open] > .modal-button::before {
+
+.Mail{
+    color: lightblue;
+}
+
+.modal-footer[open] > .modal-button::before {
     position: fixed;
     top: 0;
     right: 0;
@@ -320,9 +362,9 @@ footer {
     cursor: default;
     content: '';
     z-index: 99;
-  }
-  
-  .modal-footer .modal-content-footer  {
+}
+
+.modal-footer .modal-content-footer  {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -334,14 +376,16 @@ footer {
     border: 1px solid #d1d5da;
     border-radius: 3px;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
-  }
+}
 
-  .modal-button::-webkit-details-marker {
+.modal-button::-webkit-details-marker {
     display:none;
-  }
+}
 
 @media screen and (min-width : 361px ) {
-   
+
+/*-------------------header--------------------*/    
+
     .headerImageAllain {
     background-image: url(https://raw.githubusercontent.com/lulup52/RepoImage/master/alain%20chabat.png);
     background-size: cover;
@@ -371,7 +415,6 @@ footer {
         padding-right: 4rem;
         display: flex;
         flex-direction: column;
-        
     }
 
     .introContentPara {
@@ -384,9 +427,10 @@ footer {
 
     .intro-Titre{
         justify-content: center;
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 
+/*-------------------questions--------------------*/    
 
     .questionnaire{
         border-radius: 8vh;
@@ -401,17 +445,34 @@ footer {
         margin-left: 1rem;
         margin-right: 1rem;
     }
- 
+
+    .blocLongTextExplicatif{
+        margin-top: -1.25rem;
+    }
+
+    .longTextExpl{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    .boutonReStart{
+        font-size: 2rem;
+    }
+    
+    .boutonReset{
+        font-size: 2rem;
+    }
+/*-------------------footer--------------------*/    
+
     footer {
         justify-content: space-around;
         display: flex;
         flex-direction: row;
         align-items: center;
         height: 20vh;
-        font-size: 1.5rem;
-    
-        
+        font-size: 1.5rem;  
     }
+
     .wildlogo  {
         width: 10vw;
         height: 20vh;
@@ -433,31 +494,70 @@ footer {
         height: 80vh;
         width: 70vw;
         font-size: 2rem;  
-      }
+    }
 }
 
 @media screen and (max-width : 361px){
-    
-    .resultat{
-        height: 70vh;
-        background:url(https://raw.githubusercontent.com/TheCats100/imageWild/master/Alain%20plus%20petit.png);
+   
+/*-------------------header--------------------*/    
+    .intro-Titre{
+        font-size: 1.5rem;
+    }
+
+    .headerImageAllain {
+        display: none;
     }
 
     .ReimsWildQuiz {
         padding-top: 20vh;
         font-size: 4rem;
     }
+
+    .intro-Content{
+        font-size: 1rem;
+    }
     
+    .introContentPara {
+        margin-bottom: 2rem;
+    }
+
+    .resultat{
+        height: 70vh;
+    }
+/*-------------------questions--------------------*/    
+
+    .question{
+        font-size:2rem;
+    }
+
+    .reponse{
+        font-size: 1rem;
+    }
 
     .textResultat{
         text-align: center;
-        height: 20vh;
         font-size: 1.5rem;
     }
 
     .alain-chabat{
         font-size: 1rem;
     }
+
+    .blocLongTextExplicatif{
+        margin-top: -1.2rem;
+    }
+
+    .longTextExpl{
+        font-size: 0.8rem;
+    }
+
+
+    .boutonQsuivante{
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+/*-------------------footer--------------------*/    
+
     .intro-Content{
         font-size: 1rem;
     }
@@ -466,7 +566,7 @@ footer {
     }
 
     .question{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 
     .reponse{
@@ -484,11 +584,7 @@ footer {
         text-align: justify;
         height: 80vh;
         width: 70vw;
-        font-size: 2rem;
-
-    }
-    .headerImageAllain {
-        display: none;
+        font-size: 0.75rem;
     }
 
 }
